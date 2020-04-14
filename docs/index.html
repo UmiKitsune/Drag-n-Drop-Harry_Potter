@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drag and Drop</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Практика Drag&Drop</h1>
+        <div class="wrapper">
+            <ul class="list">
+                <!--for names-->
+                <li class="list_caption" title="Дом">Home</li>
+                <li class="list_caption" title="Косой переулок">Diagon Alley</li>
+                <li class="list_caption" title="Платформа 9 и 3/4">Platform 9 <sup>3</sup>/<sub>4</sub>
+                </li>
+                <li class="list_caption" title="Хогвартс">Hogwarts</li>
+
+                <!--for cards-->
+                <li class="list_cell js_cell home">
+                    <!--элементу который нужно тянуть необходимо поставить атрибут draggable="true"-->
+                    <div class="list_card js_card" draggable="true">
+                        <img src="img/hp.png" alt="Harry">
+                    </div>
+                </li>
+                <li class="list_cell js_cell diaginAlley"></li>
+                <li class="list_cell js_cell platform"></li>
+                <li class="list_cell js_cell hogwarts"></li>
+
+            </ul>
+        </div>
+        <div class="instruction">
+            <p>Передвинь Гарри</p>
+            <img src="img/steps.png" alt="">
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
