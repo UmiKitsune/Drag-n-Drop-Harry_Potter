@@ -39,6 +39,8 @@ const dragAndDrop = () => {
 
     card.addEventListener('dragstart', dragStart);
     card.addEventListener('dragend', dragEnd);
+    
+    $('.js_card').draggable();
 };
 
 dragAndDrop();
