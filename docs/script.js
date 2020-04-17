@@ -1,3 +1,7 @@
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+
+    alert("Внимание! Сайт работает только на ПК")
+}
 const dragAndDrop = () => {
     const card = document.querySelector('.js_card');
     const cells = document.querySelectorAll('.js_cell');
